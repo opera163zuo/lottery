@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#lottery-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#lottery-table th,
+#lottery-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#lottery-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+#lottery-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#lottery-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.red-ball {
+    color: red;
+    font-weight: bold;
+}
+
+.blue-ball {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 新增预测样式 */
+.prediction {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.prediction h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.prediction-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.prediction-column {
+    flex: 1;
+    max-width: 400px;
+}
+
+.prediction-column h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.prediction-list {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.prediction-group {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.prediction-group span {
+    margin-right: 5px;
+}

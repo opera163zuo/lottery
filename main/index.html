@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双色球最近100期</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>双色球最近200期开奖数据</h1>
+        <div class="prediction">
+            <h3>预测号码</h3>
+            <div class="prediction-container">
+                <div class="prediction-column">
+                    <h4>红球预测</h4>
+                    <div id="prediction-red" class="prediction-list"></div>
+                </div>
+                <div class="prediction-column">
+                    <h4>蓝球预测</h4>
+                    <div id="prediction-blue" class="prediction-list"></div>
+                </div>
+            </div>
+        </div>
+        <table id="lottery-table">
+            <thead>
+                <tr>
+                    <th>期号</th>
+                    <th>红球</th>
+                    <th>蓝球</th>
+                    <th>开奖日期</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 数据将由JavaScript填充 -->
+            </tbody>
+    </table>
+    <div id="pagination" style="margin-top: 20px; text-align: center;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
