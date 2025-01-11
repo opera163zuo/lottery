@@ -209,8 +209,26 @@ function displayPrediction(predictions) {
 // 保存全部数据
 let allData = [];
 
+// 更新当前时间显示
+function updateCurrentTime() {
+    const now = new Date();
+    const timeString = now.toLocaleString('zh-CN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+    document.getElementById('current-time').textContent = `当前时间：${timeString}`;
+}
+
 // 初始化
 async function init() {
+    // 初始化时间显示
+    updateCurrentTime();
+    setInterval(updateCurrentTime, 1000);
+    
     try {
         const data = await getLotteryData();
         if (data.length > 0) {
